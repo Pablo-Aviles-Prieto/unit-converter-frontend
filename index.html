@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit converter by Pablo Avilés</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script type="module" src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="header-container">
+        <ul>
+          <li><i class="fa-solid fa-right-left"></i></li>
+          <li><p>unit converter</p></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section id="convert-section" class="convert-section">
+        <h2 class="card-title">convert</h2>
+        <div class="convert-container">
+          <div class="left-convert">
+            <div class="left-convert-input">
+              <select class="inputs" name="select-convert" id="select-convert">
+                <option value="km-miles">km ➝ miles</option>
+                <option value="miles-km">miles ➝ km</option>
+                <option value="feet-meters">feet ➝ meters</option>
+                <option value="meters-feet">meters ➝ feet</option>
+                <option value="cm-inches">cm ➝ inches</option>
+                <option value="inches-cm">inches ➝ cm</option>
+              </select>
+              <button id="convert-btn">
+                <i class="fa-solid fa-right-left swap-btn"></i>
+              </button>
+            </div>
+            <button id="save-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="right-convert">
+            <div class="left-right-convert">
+              <input type="number" id="result-first-unit-convert" placeholder="0" />
+              <p id="result-second-unit-convert">0.00</p>
+            </div>
+            <div class="right-right-convert">
+              <p id="first-unit-convert">km</p>
+              <p id="second-unit-convert">miles</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="saved-section" class="hide-class">
+        <h2>saved</h2>
+        <ul class="ul-saved-section"></ul>
+      </section>
+    </main>
+    <footer>
+      <nav class="footer-container">
+        <ul class="list-footer">
+          <li>Terms of service</li>
+          <li>Privacy policy</li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
